@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    max-height: var(--footer-height);
+    padding: 20px;
+    
+}
+.link {
+    font-family: sora;
+    color: gold;
+    text-decoration: none;
+
+}
+
+.link:hover {
+    font-family: sora;
+    color: hotpink;
+    text-decoration: none;
+    text-shadow: 0 0 10px #FF0000, 0 0 10px #0000FF;
+
+}

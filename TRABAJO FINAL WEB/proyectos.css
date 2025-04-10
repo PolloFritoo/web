@@ -1,0 +1,205 @@
+@import url("base.css");
+@import url("header.css");
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+    padding: 50px;
+    font-family: sora;
+    height: 100vh;
+    margin-bottom: 50px;
+
+
+}
+/* Efecto hover para aumentar el tamaño */
+.parent img:hover {
+    transform: scale(105%); /* Amplía la imagen un 10% */
+   /* cursor: pointer; /* Cambia el cursor para indicar que se puede hacer clic */
+    
+}
+.parent img {
+    border-radius: 14px;
+    background-color: rgba(77, 75, 65, 0.158);
+  
+}
+
+.titulo {
+   
+    color: hotpink;
+    font-weight: bolder;
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+    
+
+}
+
+.parent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* o "contain" si no quieres recortar */
+    border-radius: 14px;
+    /* igual que los divs */
+    display: block;
+}
+
+.texto {
+    padding-top: 10px;
+    color: antiquewhite;
+    font-weight: lighter;
+    padding: 20px;
+    font-size: 16Spx;
+    text-align: justify;
+}
+
+.div2 {
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+.div3 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+.div4 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.div5 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 4;
+
+}
+
+.div6 {
+    grid-row: span 4 / span 4;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.div7 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.div8 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+
+.div11 {
+    grid-row: span 5 / span 5;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.div12 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+.div13 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.div14 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.div15 {
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.div16 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.div17 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.div18 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+.div19 {
+    grid-row: span 4 / span 4;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.div20 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+
+.div21 {
+    grid-row: span 6 / span 6;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.div22 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.div23 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.div24 {
+    grid-row: span 4 / span 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.div25 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 5;
+}
+
+.div26 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.div27 {
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.div28 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}

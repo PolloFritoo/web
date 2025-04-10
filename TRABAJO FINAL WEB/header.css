@@ -1,0 +1,99 @@
+.barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    backdrop-filter: blur(20px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+
+.logo {
+    height: 70px;
+    display: flex;
+}
+
+.logo:hover {
+    filter: hue-rotate(280deg);
+    filter: invert(1) hue-rotate(430deg);
+  
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    font-family: sora;
+    color: gold;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: background 0.3s;
+    border-radius: 20px;
+
+}
+.menu-items {
+    list-style: none;
+    display:inline-flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  
+  .menu-items li a {
+    text-decoration: none;
+    color: #555; /* Reemplaza con tu color de texto */
+}
+    
+.menu a:hover {
+    /* background:hotpink;
+    border-radius: 20px;
+    color: white;*/
+    font-family: sora;
+    color: hotpink;
+    text-decoration: none;
+    text-shadow: 0 0 10px #FF0000, 0 0 10px #0000FF;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        padding: 10px;
+    }
+
+    .menu-container {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        z-index: 9;
+    }
+
+    .menu-container.active {
+        display: flex;
+    }
+
+    .menu {
+        flex-direction:row;
+        gap: 20px;
+    }
+}
+.menu-icon {
+display: block;
+background: none;
+border: none;
+}

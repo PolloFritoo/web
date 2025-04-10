@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8"> <!--codificacion q tiene q usar-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Para que sea responsive y funcionen las querys-->
+    <title> Nuria </title>
+    <meta name="description" content="Portfolio de Nuria Sánchez Etreros, diseñadora multidisciplinar">
+    <meta name="theme-color" content="#ffd700">
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link type="text/css" rel="stylesheet" href="portfolio.css">
+    <!--Para que se enlace a la tipografia deseada de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="barra">
+        <button class="menu-icon">
+        <nav>
+            
+            <ul class="menu">
+                <li><a href="Portfolio.html"><img src="logo.png" alt="logo" class="logo"></a></li>
+                <li><a href="Proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="Acerca.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="inicio">
+        <section class="hero">
+            <p class="subtitulo2">Año 2025</p>
+            <h1 class="titulo">PORTFOLIO <a href="acerca.html" class="subtitulo1">Nuria Sánchez Etreros</a></h1>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <a href="mailto:nuria.sanchez.etreros@gmail.com" class="link"> nuria.sanchez.etreros@gmail.com </a>
+    </footer>
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const menuContainer = document.getElementById('menu-container');
+    
+        toggleBtn.addEventListener('click', () => {
+            menuContainer.classList.toggle('active');
+        });
+    </script>
+</body>
+
+
+
+</html>
