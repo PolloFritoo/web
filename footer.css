@@ -1,17 +1,19 @@
 .footer {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    max-height: var(--footer-height);
     padding: 20px;
-    
+    margin-top: 40px;
+    max-height: var(--footer-height);
 }
+
 .link {
     font-family: sora;
     color: gold;
     text-decoration: none;
-
+    padding: 8px;
 }
 
 .link:hover {
@@ -19,5 +21,28 @@
     color: hotpink;
     text-decoration: none;
     text-shadow: 0 0 10px #FF0000, 0 0 10px #0000FF;
+}
 
+/* Media queries para hacer el footer responsive */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px;
+        margin-top: 30px;
+    }
+    
+    .link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    .link {
+        font-size: 12px;
+        padding: 5px;
+    }
 }

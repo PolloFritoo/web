@@ -1,69 +1,122 @@
 @import url("base.css");
 @import url("header.css");
+
 body {
     font-family: sora;
     background-color: rgb(28, 28, 28);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin-top: 90px;
-  }
-.titulo {
-color: gold; 
-text-align: center;
+    margin: 0;
+    padding: 0;
 }
-  .contenedor {
-    background-color:#ffd700;
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 0px 40px rgba(255, 70, 178, 0.649);
-    width: 100%;
-    max-width: 400px;
-  }
 
-  .iconos {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    justify-content: space-around;
-    padding-top: 50px;
-  }
+.contenedor-principal {
+    width: 90%;
+    max-width: 800px;
+    margin: 120px auto 50px;
+    padding: 20px;
+}
 
-  h2 {
-    margin-bottom: 20px;
+.titulo {
+    color: gold; 
     text-align: center;
+    margin-bottom: 30px;
     font-size: 40px;
-  }
+}
 
-  label {
-    display: block;
-    font-weight: bold;
-    padding-bottom: 10px;
-  }
-
-  input, textarea {
+.formulario-contacto {
     width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1.25rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
     border: 3px solid #ff69b4;
     border-radius: 8px;
-    font-size: 1rem;
-    
-  }
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+}
 
-  button {
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+button {
     width: 100%;
-    padding: 0.75rem;
+    padding: 12px;
     background-color: #000;
-    color: lab(100% 0.01 -0.01);
+    color: gold;
     border: none;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
-  }
+}
 
-  button:hover {
-    background-color:hotpink;
-  }
+button:hover {
+    background-color: hotpink;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.iconos img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.iconos img:hover {
+    transform: scale(1.2);
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+
+/* Móviles pequeños (hasta 480px) */
+@media screen and (max-width: 480px) {
+    .titulo {
+        font-size: 32px;
+    }
+    
+    .iconos {
+        gap: 20px;
+    }
+    
+    .iconos img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .contenedor-principal {
+        margin-top: 100px;
+        padding: 10px;
+    }
+    
+    input, textarea, button {
+        padding: 10px;
+    }
+}
+
+/* Aseguramos que el menú se vea bien en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .menu {
+        gap: 20px;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    
+    .menu li {
+        font-size: 14px;
+    }
+    
+    .logo {
+        height: 50px;
+    }
+}

@@ -1,16 +1,14 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
 
 <head>
-    <meta charset="utf-8"> <!--codificacion q tiene q usar-->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Para que sea responsive y funcionen las querys-->
     <title> Contacto </title>
     <meta name="description" content="Portfolio de Nuria Sánchez Etreros, diseñadora multidisciplinar">
     <meta name="theme-color" content="#ffd700">
     <link rel="icon" type="image/x-icon" href="logo.ico">
     <link type="text/css" rel="stylesheet" href="contacto.css">
-    <!--Para que se enlace a la tipografia deseada de google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -18,9 +16,7 @@
 
 <body>
     <header class="barra">
-        <button class="menu-icon">
         <nav>
-            
             <ul class="menu">
                 <li><a href="Portfolio.html"><img src="logo.png" alt="logo" class="logo"></a></li>
                 <li><a href="Proyectos.html">Proyectos</a></li>
@@ -29,33 +25,28 @@
             </ul>
         </nav>
     </header>
-    <div>
+
+    <div class="contenedor-principal">
         <h1 class="titulo">Contáctame!</h1>
         <main>
-            <form action="https://api.web3forms.com/submit" method="POST">
-
-                <!-- Replace with your Access Key -->
+            <form action="https://api.web3forms.com/submit" method="POST" class="formulario-contacto">
                 <input type="hidden" name="access_key" value="49b06e2f-9287-49b5-9502-efbf7472730f">
-
-                <!-- Form Inputs. Each input must have a name="" attribute -->
                 <input type="text" placeholder="Nombre" name="Nombre" required>
                 <input type="email" placeholder="Email" name="Email" required>
                 <textarea name="Mensaje" placeholder="Mensaje" required></textarea>
-
-                <!-- Honeypot Spam Protection -->
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none ;">
-
-                <!-- Custom Confirmation / Success Page -->
-                <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 <button type="submit"> Enviar </button>
             </form>
-            <section class="iconos"> 
-               <a href="https://www.behance.net/NuriaSanchezEtreros"> <img src="behance.png" alt="behance" >  </a>
-               <a href="https://www.linkedin.com/in/nuria-s%C3%A1nchez-etreros-5291b0299/"> <img src="linkedin.png" alt="linkedin" >  </a>
-               <a href="https://www.instagram.com/0.nuria.0?igsh=NGJlanhyYnF6Ymho"> <img src="instagram.png" alt="instagram" > </a>
+
+            <section class="iconos">
+                <a href="https://www.behance.net/NuriaSanchezEtreros"><img src="behance.png" alt="behance"></a>
+                <a href="https://www.linkedin.com/in/nuria-s%C3%A1nchez-etreros-5291b0299/"><img src="linkedin.png"
+                        alt="linkedin"></a>
+                <a href="https://www.instagram.com/0.nuria.0?igsh=NGJlanhyYnF6Ymho"><img src="instagram.png"
+                        alt="instagram"></a>
             </section>
         </main>
+    </div>
 </body>
 
 </html>

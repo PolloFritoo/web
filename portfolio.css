@@ -60,3 +60,45 @@ background-color: hotpink;
     text-shadow: 0 0 10px #FF0000, 0 0 10px #0000FF;
 
 }
+
+/* Media queries para hacer la página responsive */
+/* Móviles (hasta 768px) */
+@media screen and (max-width: 768px) {
+    .titulo {
+        font-size: 60px;
+    }
+    
+    .subtitulo1 {
+        font-size: 24px;
+        padding: 10px;
+    }
+    
+    .subtitulo2 {
+        font-size: 24px;
+    }
+    
+    .inicio {
+        height: calc(100vh - var(--footer-height) - 70px);
+    }
+}
+
+/* Móviles pequeños (hasta 480px) */
+@media screen and (max-width: 480px) {
+    .titulo {
+        font-size: 40px;
+    }
+    
+    .subtitulo1 {
+        font-size: 18px;
+        padding: 8px;
+    }
+    
+    .subtitulo2 {
+        font-size: 18px;
+    }
+    
+    .inicio {
+        height: calc(100vh - var(--footer-height) - 60px);
+        padding: 0 15px;
+    }
+}
